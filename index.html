@@ -1,0 +1,17 @@
+<html>
+
+<script>
+var lezrib = '26130380750000419080561651141120';
+    var z1 = lezrib.slice(0,8);
+    var z2 = parseInt(z1)%97;
+    var z3 = z2+lezrib.slice(8,14);
+    var z4 = parseInt(z3)%97;
+    var z5 = z4+lezrib.slice(14, 20);
+    var z6 = parseInt(z5)%97;
+    var z7 = z6+lezrib.slice(20, 26);
+    var z8 = parseInt(z7)%97;
+    var z9 = z8 + lezrib.slice(26, 31)+ '00';
+    var z10 = 97 - parseInt(z9)%97;
+    console.log(z10);
+</script>
+</html>
